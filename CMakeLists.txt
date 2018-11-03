@@ -3,4 +3,4 @@ project(OgreBoulotteur C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(OgreBoulotteur main.c)
+add_executable(OgreBoulotteur main.c foret.h foret.c)

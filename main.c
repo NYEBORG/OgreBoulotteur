@@ -3,7 +3,11 @@
 //
 
 #include <stdio.h>
+#include "foret.h"
+
 int main () {
-    printf("Hello World!");
+    Foret foret;
+    initialiserForet(foret);
+    afficherForet(foret);
     return 0;
 }
