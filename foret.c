@@ -10,6 +10,12 @@ void initialiserForet(Foret foret) {
         for (int j = 0; j < FORET_LONGUEUR; j++) {
             if (i == 0 || j == 0 || i == FORET_HAUTEUR - 1 || j == FORET_LONGUEUR - 1)
                 foret[i][j] = FORET_ARBRE;
+
+            srand(FORET_DENSITE);
+
+            if (rand() % FORET_DENSITE == 0)
+                foret[i][j] = FORET_ARBRE;
+
             else
 
                 foret[i][j] = SOL;
