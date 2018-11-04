@@ -11,11 +11,12 @@
 #define FORET_DENSITE 15
 #include <stdio.h>
 #include <stdlib.h>
+#include "enfant.h"
 typedef char Foret[FORET_HAUTEUR][FORET_LONGUEUR];
 
 
 void initialiserForet(Foret foret);
-void afficherForet(Foret foret);
+void afficherForet(Foret foret, Enfants enfants);
 
 
 #endif //OGREBOULOTTEUR_FORET_H

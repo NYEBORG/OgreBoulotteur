@@ -4,10 +4,15 @@
 
 #include <stdio.h>
 #include "foret.h"
+#include <time.h>
+#include "enfant.h"
+
 
 int main () {
+    srand(time(NULL));
+    Enfants enfants;
     Foret foret;
     initialiserForet(foret);
-    afficherForet(foret);
+    afficherForet(foret, enfants);
     return 0;
 }
